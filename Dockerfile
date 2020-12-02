@@ -6,9 +6,11 @@ ENV TFW_EHMAIN_DIR="${TFW_DIR}/builtin_event_handlers" \
     CONTROLLER_PORT=5555
 
 # Copy TFW related stuff to a dedicated directory
-COPY tfw/src ${TFW_EHMAIN_DIR}/
+COPY src ${TFW_EHMAIN_DIR}/
 
-COPY tfw/supervisor /etc/supervisor/conf
+COPY error_page/502.html ${TFW_FRONTEND_DIR}
+
+COPY supervisor /etc/supervisor/conf
 
 # Hide TFW related code from user
 RUN chown -R root:root ${TFW_SERVER_DIR} ${TFW_DIR} &&\
