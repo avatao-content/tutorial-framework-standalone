@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 2s infinite;
+   -moz-animation: flickerAnimation 2s infinite;
+   -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+.content {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  color: #007bff;
+  font-size: 40px;
+  max-width: 500px;
+  margin: auto;
+  padding: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<div class="content animate-flicker">
+  <h1>Loading...</h1>
+</div>
+</body>
+</html>
