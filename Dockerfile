@@ -10,6 +10,7 @@ COPY src ${TFW_EHMAIN_DIR}/
 
 COPY etc /etc
 COPY error_page/502.html ${TFW_FRONTEND_DIR}
+COPY tmp /tmp
 
 # Hide TFW related code from user
 RUN chown -R root:root ${TFW_SERVER_DIR} ${TFW_DIR} &&\
