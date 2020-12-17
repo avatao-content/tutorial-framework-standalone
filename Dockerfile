@@ -15,6 +15,6 @@ COPY error_page/502.html ${TFW_FRONTEND_DIR}
 RUN chown -R root:root ${TFW_SERVER_DIR} ${TFW_DIR} &&\
     chmod -R 700 ${TFW_SERVER_DIR} ${TFW_DIR}
     
-VOLUME ["/home/${AVATAO_USER}"]
+VOLUME ["/home/${AVATAO_USER}", "/.tutorial"]
 
 USER root
