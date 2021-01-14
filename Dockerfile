@@ -14,7 +14,8 @@ COPY tfw_init.sh /.tfw/
 
 # Hide TFW related code from user
 RUN chown -R root:root ${TFW_SERVER_DIR} ${TFW_DIR} &&\
-    chmod -R 700 ${TFW_SERVER_DIR} ${TFW_DIR}
+    chmod -R 700 ${TFW_SERVER_DIR} ${TFW_DIR} &&\
+    chmod 600 /etc/ssh/tfw_id_rsa
     
 VOLUME ["/home/${AVATAO_USER}", "/.tutorial"]
 
