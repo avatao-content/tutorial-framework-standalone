@@ -12,7 +12,7 @@ fi
 
 chmod 777 "${TFW_PIPES_DIR}"
 
-cp /.tutorial/app.yml "${TFW_DIR}/builtin_event_handlers/app.yml"
+cp /.tutorial/tfw.yml "${TFW_DIR}/builtin_event_handlers/app.yml"
 cp /.tutorial/app_fsm.py "${TFW_DIR}/builtin_event_handlers/app_fsm.py"
 cp /.tutorial/frontend_config.yaml "${TFW_DIR}/builtin_event_handlers/frontend_config.yaml"
 
