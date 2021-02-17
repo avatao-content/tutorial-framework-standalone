@@ -1,4 +1,4 @@
-FROM avatao/baseimage-tutorial-framework:ragdoll-20210114
+FROM avatao/baseimage-tutorial-framework:ragdoll-20210217
 
 # Define variables to use later
 ENV TFW_EHMAIN_DIR="${TFW_DIR}/builtin_event_handlers" \
